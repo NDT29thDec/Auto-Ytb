@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "GoLike YouTube Auto",
+  "version": "3.0",
+  "description": "Tự động hóa luồng nhận job, đăng ký và báo cáo GoLike (Dựa trên video thực tế).",
+  "permissions": ["tabs", "storage"],
+  "host_permissions": [
+    "https://*.golike.net/*",
+    "https://*.youtube.com/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.golike.net/*"],
+      "js": ["golike.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    },
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["youtube.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
