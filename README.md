@@ -20,8 +20,8 @@ Thay vì phải thao tác thủ công qua nhiều bước: nhận nhiệm vụ t
 ## 🛠️ Yêu cầu hệ thống (Prerequisites)
 
 - Trình duyệt web (Google Chrome, Firefox, v.v.)
-- WebDriver tương ứng với phiên bản trình duyệt (ví dụ: ChromeDriver)
-- Môi trường chạy mã nguồn (Python, Node.js, v.v. - *hãy cập nhật ngôn ngữ dự án của bạn*)
+- WebDriver tương ứng với phiên bản trình duyệt 
+- Môi trường chạy mã nguồn 
 
 ## 🚀 Cài đặt (Installation)
 
